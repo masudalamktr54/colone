@@ -38,7 +38,9 @@
 	</nav>
 
 	<!-- main section -->
-		<div class="h-1/2 w-full fixed flex justify-between items-center">
+
+	<!-- fixed social media icons -->
+		<div class="h-1/2 w-full fixed flex justify-between items-center z-10">
 			<div class="flex flex-col bg-white py-4 px-2 rounded-r-2xl shadow-xl shadow-gray-800 text-3xl">
 				<i class="text-[#3b5998] fa-brands fa-facebook"></i>
 				<i class="text-[#d23c99] my-2 fa-brands fa-instagram"></i>
@@ -49,15 +51,57 @@
 				<p class="bg-[#f8a720] pl-3 py-3 text-base font-medium [writing-mode:vertical-lr] ">Registration Process</p>
 			</div>
 		</div>
+		<!-- end fixed social media icons -->
 
+		<!-- moving heading -->
 		<div class="bg-green-900 bg-opacity-90 text-white text-xl py-4 shadow-inner shadow-gray-400">
 			<marquee class="">Sunrise Public School, Bihar - 7654425454</marquee>
 		</div>
+		<!-- end moving heading -->
 
-		<!-- main img -->
+		<!-- main img slider -->
 		<div class="mb-10 md:mb-0.5">
-			<img class="w-full" src="./assets/main section/congratutation.jpeg" alt="">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div>
+							<img class="h-[50vh] md:h-[80vh] w-full" src="./assets/main section/main-slider-pic/pic-1.jpeg" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div>
+							<img class="h-[50vh] md:h-[80vh] w-full" src="./assets/main section/main-slider-pic/pic-2.webp" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div>
+							<img class="h-[50vh] md:h-[80vh] w-full" src="./assets/main section/main-slider-pic/pic-3.webp" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div>
+							<img class="h-[50vh] md:h-[80vh] w-full" src="./assets/main section/main-slider-pic/pic-4.webp" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div>
+							<img class="h-[50vh] md:h-[80vh] w-full" src="./assets/main section/main-slider-pic/pic-5.jpeg" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div>
+							<img class="h-[50vh] md:h-[80vh] w-full" src="./assets/main section/main-slider-pic/pic-6.jpeg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- end main img slider -->
 
 		<!-- apply for admission -->
 		<div class="md:flex">
@@ -72,6 +116,7 @@
 				<button class="bg-yellow-500 py-4 px-7 rounded-lg text-black text-lg font-semibold hover:text-green-900">Registration Process</button>
 			</div>
 		</div>
+		<!-- end apply for admission -->
 
 		<!-- sunrise public school events -->
 		<div class="md:mx-14">
@@ -117,6 +162,7 @@
 				<button class="bg-yellow-500 py-4 px-7 rounded-lg text-black text-lg font-semibold hover:text-green-900">View All Events</button>
 			</div>
 		</div>
+		<!-- end sunrise public school events -->
 
 		<!-- Announcement upcoming events -->
 		<div class="bg-slate-100 md:flex md:justify-center">
@@ -144,6 +190,7 @@
 				<p class="text-orange-600 text-lg font-semibold border-dotted border-b-[1px]">For Class - All classes</p>
 			</div>
 		</div>
+		<!-- end Announcement upcoming events -->
 
 		<!-- video gallery -->
 		<div class="m-[10px]">
@@ -164,6 +211,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- end video gallery -->
 
 		<!-- testimonials -->
 	    <div>
@@ -175,7 +223,7 @@
 				<!-- card-1 -->
 				<div class="swiper-slide">
 					<div class="flex justify-center">
-						<div class="md:mx-2 mx-11 sm:mx-auto max-w-xl rounded-md bg-black shadow-xl p-[.2px]">
+						<div class="md:mx-2 sm:mx-auto max-w-xl rounded-md bg-black shadow-xl p-[.2px]">
 							<div class="flex flex-col rounded-md bg-white">
 							  <div class="flex flex-1 flex-col justify-between p-4">
 								<div class="mb-2 flex space-x-2">
@@ -282,7 +330,7 @@
 				<!-- card-2 -->
 				<div class="swiper-slide">
 					<div class="flex justify-center">
-						<div class="md:mx-2 mx-11 sm:mx-auto max-w-xl rounded-md bg-black shadow-xl p-[.2px]">
+						<div class="md:mx-2 sm:mx-auto max-w-xl rounded-md bg-black shadow-xl p-[.2px]">
 							<div class="flex flex-col rounded-md bg-white">
 							  <div class="flex flex-1 flex-col justify-between p-4">
 								<div class="mb-2 flex space-x-2">
@@ -389,7 +437,7 @@
 				<!-- card-3 -->
 				<div class="swiper-slide">
 					<div class="flex justify-center">
-						<div class="md:mx-2 mx-11 sm:mx-auto max-w-xl rounded-md bg-black shadow-xl p-[.2px]">
+						<div class="md:mx-2 sm:mx-auto max-w-xl rounded-md bg-black shadow-xl p-[.2px]">
 							<div class="flex flex-col rounded-md bg-white">
 							  <div class="flex flex-1 flex-col justify-between p-4">
 								<div class="mb-2 flex space-x-2">
@@ -496,7 +544,9 @@
 		    </div>
 	        </div>
 	    </div>
+		<!-- end testimonials -->
 
+		<!-- footer -->
 	<footer class="bg-black text-white ">
 		<div class="pl-4 md:flex md:justify-between md:mx-32">
 			<div class="w-1/2 mx-2 mt-10 md:mr-14">
