@@ -13,37 +13,197 @@
 <body>
 	<!-- navigation -->
 	<nav>
-		<div class="flex justify-between mx-4">
-
-			<div class="lg:ml-8">
+		<div class="flex justify-between">
+			<div class="ml-4 lg:ml-8">
 				<img class="h-20" src="./assets/nav/suman-logo.svg" alt="">
 			</div>
 
-			<div class="md:hidden flex items-center mr-2 text-3xl">
-				<i class="fa-solid fa-bars"></i>
+			<div class="md:hidden flex items-center mr-4 text-2xl md:text-3xl">
+				<i class="hamburger fa-solid fa-bars"></i>
 			</div>
 	
 			<div class="hidden md:flex md:items-center">
 				<ul class="flex space-x-10 md:space-x-4 lg:space-x-10 md:text-base lg:text-lg font-semibold text-green-900">
-					<li>Home</li>
-					<li>About Us</li>
-					<li>Academic</li>
-					<li>Gallery</li>
-					<li>Admission</li>
-					<li>Event</li>
+					<li><a href="#">Home</a></li>
+
+					<!-- About us dropdown -->
+					<div class="max-w-lg mx-auto">
+						<button class="text-center inline-flex items-center" type="button" data-dropdown-toggle="about-us-dropdown">About us <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+					
+						<!-- Dropdown menu -->
+						<div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="about-us-dropdown">
+							
+							<ul class="py-1" aria-labelledby="dropdown">
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Director's message</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">HOD's message</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Our Mission and Vision</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign In</a>
+							</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Academic dropdown -->
+					<div class="max-w-lg mx-auto">
+						<button class="text-center inline-flex items-center" type="button" data-dropdown-toggle="academic-dropdown">Academics <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+					
+						<!-- Dropdown menu -->
+						<div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="academic-dropdown">
+							
+							<ul class="py-1" aria-labelledby="dropdown-2">
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Academics</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Co-Curricular Activities</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Social Activities</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Book List</a>
+							</li>
+							</ul>
+						</div>
+					</div>
+					
+					<li><a href="#">Gallery</a></li>
+
+					<!-- Admission dropdown -->
+					<div class="max-w-lg mx-auto">
+						<button class="text-center inline-flex items-center" type="button" data-dropdown-toggle="admission-dropdown">Admission <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+					
+						<!-- Dropdown menu -->
+						<div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="admission-dropdown">
+							
+							<ul class="py-1" aria-labelledby="dropdown">
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Amenities</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Brochure</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Registration Process</a>
+							</li>
+							</ul>
+						</div>
+					</div>
+					
+					<li><a href="#">Event</a></li>
 					<li><button class="bg-yellow-600 py-1 px-3 rounded-lg text-white hover:bg-yellow-300">Contact Us</button></li>
 				</ul>
 			</div>
 		</div>
+
+		<!-- side bar -->
+		<div class="bg-slate-200 ">
+			<div class="sidebar flex flex-col items-center px-2">
+				<div class=" pr-14 text-2xl flex justify-end">
+					<i class="cross fa-solid fa-xmark"></i>
+				</div>
+		
+				<div class="flex justify-center">
+					<ul class="space-y-4 font-semibold text-green-900 py-2">
+						<li><a href="#">Home</a></li>
+
+						<!-- About us mobile dropdown -->
+						<div class="max-w-lg mx-auto">
+							<button class="text-center inline-flex items-center" type="button" data-dropdown-toggle="about-us-dropdown-1">About us <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+						
+							<!-- Dropdown menu -->
+							<div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="about-us-dropdown-1">
+								
+								<ul class="py-1" aria-labelledby="dropdown">
+								<li>
+									<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Director's message</a>
+								</li>
+								<li>
+									<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">HOD's message</a>
+								</li>
+								<li>
+									<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Our Mission and Vision</a>
+								</li>
+								<li>
+									<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign In</a>
+								</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- Academic mobile dropdown -->
+					    <div class="max-w-lg mx-auto">
+						<button class="text-center inline-flex items-center" type="button" data-dropdown-toggle="academic-dropdown-2">Academics <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+					
+						<!-- Dropdown menu -->
+						<div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="academic-dropdown-2">
+							
+							<ul class="py-1" aria-labelledby="dropdown-2">
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Academics</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Co-Curricular Activities</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Social Activities</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Book List</a>
+							</li>
+							</ul>
+						</div>
+					    </div>
+						<li><a href="#">Gallery</a></li>
+
+						<!-- Admission mobile dropdown -->
+					<div class="max-w-lg mx-auto">
+						<button class="text-center inline-flex items-center" type="button" data-dropdown-toggle="admission-dropdown-3">Admission <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+					
+						<!-- Dropdown menu -->
+						<div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="admission-dropdown-3">
+							
+							<ul class="py-1" aria-labelledby="dropdown">
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Amenities</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Brochure</a>
+							</li>
+							<li>
+								<a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Registration Process</a>
+							</li>
+							</ul>
+						</div>
+					</div>
+
+						<li><a href="#">Event</a></li>
+						<li><button class="bg-yellow-600 py-1 px-2  rounded-lg text-white hover:bg-yellow-300">Contact Us</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end side bar -->
 	</nav>
 
 	<!-- main section -->
+	<section>
+		
 
 	<!-- fixed social media icons -->
 		<div class="h-1/2 w-full fixed flex justify-between items-center z-10">
 			<div class="flex flex-col bg-white py-4 px-2 rounded-r-2xl shadow-xl shadow-gray-800 text-3xl">
-				<i class="text-[#3b5998] fa-brands fa-facebook"></i>
-				<i class="text-[#d23c99] my-2 fa-brands fa-instagram"></i>
+				<a href="https://www.facebook.com/profile.php?id=100022940812877&mibextid=rS40aB7S9Ucbxw6v"><i class="text-[#3b5998] fa-brands fa-facebook"></i></a>
+				
+				<a href="https://www.instagram.com/masudalamktr54?utm_source=qr&igsh=dnZtbmg4Zmc5emVh"><i class="text-[#d23c99] my-2 fa-brands fa-instagram"></i></a>
+				
 				<i class="text-[#ff0000] text-[26px] fa-brands fa-youtube"></i>
 			</div>
 
@@ -545,8 +705,8 @@
 	        </div>
 	    </div>
 		<!-- end testimonials -->
-
-		<!-- footer -->
+    </section>
+	<!-- footer -->
 	<footer class="bg-black text-white ">
 		<div class="pl-4 md:flex md:justify-between md:mx-32">
 			<div class="w-1/2 mx-2 mt-10 md:mr-14">
@@ -575,10 +735,12 @@
 		<div class="text-center bg-green-800 text-lg font-semibold py-4">
 			<p>Copyright © 2023 Sunrise Public School</p>
 		</div>
-	</footer>
+	</footer>	
 </body>
+<!-- dropdown tailwind cdn -->
+<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+
+<!-- swiper js cdn -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./script.js"></script>
 </html>
-
-
